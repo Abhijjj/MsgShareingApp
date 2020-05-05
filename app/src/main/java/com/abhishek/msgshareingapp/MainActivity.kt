@@ -15,8 +15,11 @@ class MainActivity : AppCompatActivity() {
     button.setOnClickListener {
 
 
-        Log.i("mainactivity","Button was clicked ${++count}")
-        Toast.makeText(this,"first toast make in kotlin wow...+\n+i am feeling duperb",Toast.LENGTH_LONG).show()
+
+    val message=editText.text.toString();
+        Log.i("mainactivity","$message  ${++count}")
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show()
+
     }
 
 
